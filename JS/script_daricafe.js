@@ -1,13 +1,13 @@
-// Toggle class active untuk hamburger menu
+// TOGGLE CLASS ACTIVE UNTUK HAMBURGER MENU
 const navbarNav = document.querySelector('.navbar-nav');
 
-// Ketika hamburger menu di klik
+// KETIKA HAMBURGER MENU DI KLIK
 document.querySelector('#hamburger-menu').onclick = (e) => {
-  e.preventDefault(); // Mencegah link scroll ke atas
+  e.preventDefault();
   navbarNav.classList.toggle('active');
 };
 
-// Klik di luar sidebar untuk menghilangkan nav
+// KLIK DI LUAR SIDEBAR UNTUK MENGHILANGKAN NAV
 const hamburger = document.querySelector('#hamburger-menu');
 
 document.addEventListener('click', function(e) {
