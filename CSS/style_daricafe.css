@@ -522,3 +522,127 @@ footer .credit a {
     box-shadow: 0 0 0 0 rgba(141, 52, 0, 0);
   }
 }
+
+@keyframes masuk {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes masuk-pudar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero .content h1 {
+  opacity: 0;
+  animation: masuk 1s ease forwards 0.5s;
+}
+
+.hero .content p {
+  opacity: 0;
+  animation: masuk 1s ease forwards 0.7s;
+}
+
+.hero .content .cta {
+  opacity: 0;
+  animation: masuk 1s ease forwards 0.9s, denyut 2s infinite 2s;
+}
+
+.about .row .about-img {
+  opacity: 0;
+  animation: masuk 1s ease forwards 0.5s;
+}
+
+.about .row .content {
+  opacity: 0;
+  animation: masuk 1s ease forwards 0.7s;
+}
+
+.menu .row .menu-card {
+  opacity: 0;
+  animation: masuk-pudar 1s ease forwards;
+}
+
+.menu .row .menu-card:nth-child(1) { animation-delay: 0.2s; }
+.menu .row .menu-card:nth-child(2) { animation-delay: 0.4s; }
+.menu .row .menu-card:nth-child(3) { animation-delay: 0.6s; }
+.menu .row .menu-card:nth-child(4) { animation-delay: 0.8s; }
+.menu .row .menu-card:nth-child(5) { animation-delay: 1.0s; }
+.menu .row .menu-card:nth-child(6) { animation-delay: 1.2s; }
+.menu .row .menu-card:nth-child(7) { animation-delay: 1.4s; }
+.menu .row .menu-card:nth-child(8) { animation-delay: 1.6s; }
+
+.contact .row .map {
+  opacity: 0;
+  animation: masuk 1s ease forwards 0.5s;
+}
+
+.contact .row form {
+  opacity: 0;
+  animation: masuk 1s ease forwards 0.7s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about .row .about-img {
+  opacity: 0;
+  animation: slideInLeft 1s ease forwards 0.5s;
+  overflow: hidden;
+}
+
+.about .row .content {
+  opacity: 0;
+  animation: slideInRight 1s ease forwards 0.5s;
+  overflow: hidden;
+}
+
+.contact .row form {
+  opacity: 0;
+  animation: slideInUp 1s ease forwards 0.5s;
+}
+
+.contact .row .map {
+  opacity: 0;
+  animation: slideInLeft 1s ease forwards 0.5s;
+}
